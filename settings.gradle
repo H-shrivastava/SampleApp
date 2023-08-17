@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+//        Required these for mediation
+        maven { url 'https://jitpack.io' }
+        maven { url "https://android-sdk.is.com/"}
+
+    }
+}
+rootProject.name = "SampleApp"
+include ':app'
